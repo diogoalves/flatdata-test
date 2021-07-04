@@ -20,4 +20,4 @@ const filteredCurrencyRates = currencyRates.map(rate => ({
 const newFilename = `btc-price-postprocessed.json` // name of a new file to be saved
 await writeJSON(newFilename, filteredCurrencyRates) // create a new JSON file with just the Bitcoin price
 console.log("Wrote a post process file")
-await Deno.writeTextFile("./hello.txt", "Hello World!",options={append: true});
+await Deno.writeTextFile("./hello.txt", "Hello World!", {append: true});
